@@ -1,0 +1,137 @@
+{
+  "theme": "Dark",
+  "archetype": "5 (Luxury) and 2 (Performance Pro) Hybrid",
+  "typography": {
+    "heading_font": "Archivo Black, sans-serif",
+    "body_font": "Sora, sans-serif",
+    "scale": {
+      "h1": "text-5xl md:text-7xl uppercase tracking-tighter",
+      "h2": "text-4xl md:text-5xl uppercase tracking-tight",
+      "h3": "text-2xl md:text-3xl uppercase tracking-tight",
+      "h4": "text-xl font-bold",
+      "body": "text-base text-gray-300",
+      "small": "text-sm text-gray-400"
+    }
+  },
+  "colors": {
+    "background": "#000000",
+    "surface": "#0A0A0A",
+    "surface_light": "#1A1A1A",
+    "primary": "#D4AF37",
+    "primary_hover": "#FFD700",
+    "text_main": "#FFFFFF",
+    "text_muted": "#A3A3A3",
+    "border": "#2A2A2A"
+  },
+  "effects": {
+    "gold_glow": "drop-shadow(0 0 15px rgba(212, 175, 55, 0.3))",
+    "hover_lift": "hover:-translate-y-2 transition-transform duration-300",
+    "card_border": "border border-[#2A2A2A] hover:border-[#D4AF37] transition-colors duration-300"
+  },
+  "motion": {
+    "global_easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+    "stagger_children": "0.1s",
+    "hero_reveal": "fade-up with 0.8s duration",
+    "scroll_animations": "framer-motion whileInView"
+  },
+  "layout": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "section_padding": "py-20 md:py-32",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6"
+  },
+  "components": {
+    "hero": {
+      "description": "Full height 100vh with background image. Black/Gold gradient overlay to ensure text readability.",
+      "overlay": "bg-gradient-to-r from-black/90 via-black/60 to-transparent",
+      "alignment": "Left aligned text to create asymmetry."
+    },
+    "stat_cards": {
+      "description": "Black cards with 1px dark charcoal border. Gold numbers with count-up animation. Hover effect reveals gold border.",
+      "style": "bg-[#0A0A0A] border border-[#1A1A1A] p-8 rounded-none md:rounded-lg"
+    },
+    "service_cards": {
+      "description": "Image background with heavy bottom gradient. Title in Archivo Black. On hover, the image scales slightly and a gold accent line appears."
+    },
+    "pricing_cards": {
+      "description": "4-tier column layout. The 'Elite' plan has a #D4AF37 border and a 'Best Value' absolute badge.",
+      "style": "bg-[#0A0A0A] p-8 border border-[#2A2A2A]"
+    },
+    "accordion": {
+      "description": "Minimalist borders. Question in Sora bold. Gold '+' icon that rotates 45deg on open."
+    }
+  },
+  "image_mapping": {
+    "hero": {
+      "url": "https://customer-assets.emergentagent.com/job_282709a2-22d5-44bd-a76a-0adab3855c8e/artifacts/ngt93md0_DSC03545.JPG",
+      "description": "Trainer back view with gold text. Perfect for black/gold hero background.",
+      "category": "Hero Background"
+    },
+    "gallery": [
+      {
+        "url": "https://customer-assets.emergentagent.com/job_282709a2-22d5-44bd-a76a-0adab3855c8e/artifacts/m07ot9gi_DSC03519.JPG",
+        "description": "Gym machine + mirror room",
+        "category": "Gallery/Facilities"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_282709a2-22d5-44bd-a76a-0adab3855c8e/artifacts/ktdv3h9j_DSC03539.JPG",
+        "description": "Dumbbell rack + benches strength zone",
+        "category": "Gallery/Facilities"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_282709a2-22d5-44bd-a76a-0adab3855c8e/artifacts/nhgcnpos_IMG_4547.jpg",
+        "description": "Functional/CrossFit cage with rig, tires, punching bag",
+        "category": "Gallery/Facilities"
+      },
+      {
+        "url": "https://customer-assets.emergentagent.com/job_282709a2-22d5-44bd-a76a-0adab3855c8e/artifacts/hvrsw6e5_IMG_4548.jpg",
+        "description": "Spin bikes area",
+        "category": "Gallery/Facilities"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1648995361141-30676a75fd27?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHxneW0lMjB0cmVhZG1pbGwlMjBydW58ZW58MHx8fHwxNzgyNjMzNjk5fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Man running on treadmill",
+        "category": "Gallery/Facilities - Cardio"
+      },
+      {
+        "url": "https://images.pexels.com/photos/14219616/pexels-photo-14219616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Women performing yoga in neon lit studio",
+        "category": "Gallery/Facilities - Yoga"
+      }
+    ]
+  },
+  "seo_and_data": {
+    "target_keyword": "Best Unisex Gym in Dindigul",
+    "meta_tags": {
+      "title": "Core Fitness Dindigul | Best Unisex Gym in Dindigul",
+      "description": "Join Core Fitness Dindigul, the best premium unisex gym offering Strength, CrossFit, Yoga, and Personal Training. Founded 2021 by Sathish Muthuchamy."
+    },
+    "schema": [
+      "LocalBusiness",
+      "FAQPage"
+    ],
+    "business_info": {
+      "name": "Core Fitness Dindigul",
+      "founder": "Sathish Muthuchamy",
+      "established": "2021",
+      "phone_1": "+91 8667279523",
+      "phone_2": "+91 8248999488",
+      "address": "Near Achutha School, Pushpamal Nagar, Dindigul, Tamil Nadu 624001",
+      "hours": "5:30 AM – 9:00 PM",
+      "google_maps_link": "https://maps.app.goo.gl/hSWpzh3TQc2Nxe4b7",
+      "instagram": "https://www.instagram.com/corefitness_dindigul/"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install framer-motion, lucide-react, react-countup, and react-icons.",
+    "Import Archivo Black and Sora from Google Fonts in index.html.",
+    "Implement the Hero section with the Trainer back view image. Use a heavy left-to-right black gradient overlay so the Archivo Black text is perfectly readable.",
+    "For the 'Why Choose Us' section, implement 4 cards using framer-motion's staggered animations and react-countup for the numbers.",
+    "Pricing cards should be 4 columns on desktop. The 'Elite' plan needs a distinct gold border (#D4AF37) and a glowing 'Best Value' absolute badge.",
+    "Implement the Gallery using a CSS columns masonry layout or CSS Grid with varying row spans. Ensure images have a hover effect that scales the image and adds a gold border.",
+    "Embed the Google Maps iframe directly in the contact section.",
+    "Inject LocalBusiness and FAQPage JSON-LD schemas in a <script type='application/ld+json'> tag within the React Helmet or head.",
+    "Footer must include the 'Ravex Solutions' credit linked to their site.",
+    "Ensure ALL interactive elements include descriptive data-testid attributes (e.g., data-testid='hero-cta-button').",
+    "Do NOT use pure #000000 or #808080 without intention; tint with warm gold/charcoal. Our black is #000000 for pure background, and #0A0A0A for cards."
+  ]
+}
