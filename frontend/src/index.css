@@ -2,114 +2,225 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    margin: 0;
-    font-family:
-        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+/* === Core Fitness Dindigul — Black & Gold Premium === */
 
-code {
-    font-family:
-        source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Sora:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --cf-black: #000000;
+    --cf-surface: #0a0a0a;
+    --cf-surface-2: #141414;
+    --cf-charcoal: #1a1a1a;
+    --cf-border: #2a2a2a;
+    --cf-white: #ffffff;
+    --cf-mute: #a3a3a3;
+    --cf-gold: #d4af37;
+    --cf-gold-hi: #ffd700;
+    --cf-gold-soft: #c9a961;
 }
 
 @layer base {
     :root {
-        --background: 0 0% 100%;
-        --foreground: 0 0% 3.9%;
-        --card: 0 0% 100%;
-        --card-foreground: 0 0% 3.9%;
-        --popover: 0 0% 100%;
-        --popover-foreground: 0 0% 3.9%;
-        --primary: 0 0% 9%;
-        --primary-foreground: 0 0% 98%;
-        --secondary: 0 0% 96.1%;
-        --secondary-foreground: 0 0% 9%;
-        --muted: 0 0% 96.1%;
-        --muted-foreground: 0 0% 45.1%;
-        --accent: 0 0% 96.1%;
-        --accent-foreground: 0 0% 9%;
-        --destructive: 0 84.2% 60.2%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 89.8%;
-        --input: 0 0% 89.8%;
-        --ring: 0 0% 3.9%;
-        --chart-1: 12 76% 61%;
-        --chart-2: 173 58% 39%;
-        --chart-3: 197 37% 24%;
-        --chart-4: 43 74% 66%;
-        --chart-5: 27 87% 67%;
+        --background: 0 0% 0%;
+        --foreground: 0 0% 100%;
+        --card: 0 0% 4%;
+        --card-foreground: 0 0% 100%;
+        --popover: 0 0% 4%;
+        --popover-foreground: 0 0% 100%;
+        --primary: 45 65% 52%;
+        --primary-foreground: 0 0% 0%;
+        --secondary: 0 0% 8%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 0 0% 10%;
+        --muted-foreground: 0 0% 64%;
+        --accent: 45 65% 52%;
+        --accent-foreground: 0 0% 0%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 0 0% 16%;
+        --input: 0 0% 16%;
+        --ring: 45 65% 52%;
         --radius: 0.5rem;
-    }
-    .dark {
-        --background: 0 0% 3.9%;
-        --foreground: 0 0% 98%;
-        --card: 0 0% 3.9%;
-        --card-foreground: 0 0% 98%;
-        --popover: 0 0% 3.9%;
-        --popover-foreground: 0 0% 98%;
-        --primary: 0 0% 98%;
-        --primary-foreground: 0 0% 9%;
-        --secondary: 0 0% 14.9%;
-        --secondary-foreground: 0 0% 98%;
-        --muted: 0 0% 14.9%;
-        --muted-foreground: 0 0% 63.9%;
-        --accent: 0 0% 14.9%;
-        --accent-foreground: 0 0% 98%;
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 14.9%;
-        --input: 0 0% 14.9%;
-        --ring: 0 0% 83.1%;
-        --chart-1: 220 70% 50%;
-        --chart-2: 160 60% 45%;
-        --chart-3: 30 80% 55%;
-        --chart-4: 280 65% 60%;
-        --chart-5: 340 75% 55%;
     }
 }
 
-@layer base {
-    * {
-        @apply border-border;
-    }
-    body {
-        @apply bg-background text-foreground;
-    }
+html {
+    scroll-behavior: smooth;
+    background: var(--cf-black);
+}
+
+body {
+    margin: 0;
+    background: var(--cf-black);
+    color: var(--cf-white);
+    font-family:
+        "Sora",
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: var(--cf-gold);
+    color: #000;
+}
+
+/* Typography */
+.font-display {
+    font-family: "Archivo Black", "Sora", sans-serif;
+    letter-spacing: -0.01em;
+}
+.font-body {
+    font-family: "Sora", sans-serif;
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+    background: linear-gradient(135deg, #ffd700 0%, #d4af37 45%, #b8902a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Hairline gold underline */
+.gold-rule {
+    position: relative;
+}
+.gold-rule::after {
+    content: "";
+    display: block;
+    margin-top: 18px;
+    width: 56px;
+    height: 2px;
+    background: linear-gradient(90deg, #d4af37, transparent);
+}
+
+/* Gold glow */
+.gold-glow {
+    box-shadow:
+        0 10px 40px -10px rgba(212, 175, 55, 0.35),
+        0 0 0 1px rgba(212, 175, 55, 0.2) inset;
+}
+.gold-glow-strong {
+    box-shadow:
+        0 12px 60px -12px rgba(212, 175, 55, 0.55),
+        0 0 0 1px rgba(212, 175, 55, 0.3) inset;
+}
+
+/* Buttons */
+.btn-gold {
+    background: linear-gradient(135deg, #ffd700, #d4af37 55%, #b8902a);
+    color: #000;
+    border: 1px solid #d4af37;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+.btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 50px -12px rgba(212, 175, 55, 0.6);
+    filter: brightness(1.05);
+}
+.btn-outline-gold {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #d4af37;
+    transition: all 0.25s ease;
+}
+.btn-outline-gold:hover {
+    background: rgba(212, 175, 55, 0.08);
+    box-shadow: 0 0 0 1px #d4af37 inset, 0 10px 40px -16px rgba(212, 175, 55, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Card shells */
+.cf-card {
+    background: var(--cf-surface);
+    border: 1px solid var(--cf-border);
+    border-radius: 14px;
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.cf-card:hover {
+    border-color: var(--cf-gold);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 60px -20px rgba(212, 175, 55, 0.35);
+}
+
+/* Grain overlay */
+.grain {
+    position: relative;
+}
+.grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.6'/></svg>");
+}
+
+/* Hero background fade-in */
+@keyframes kenburns {
+    0% { transform: scale(1.08) translate3d(0,0,0); }
+    100% { transform: scale(1.16) translate3d(-1.5%, -1%, 0); }
+}
+.kenburns {
+    animation: kenburns 22s ease-out forwards;
+}
+
+/* Marquee for stat ticker */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+    animation: marquee 38s linear infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #d4af37, #8a701f);
+    border-radius: 8px;
+}
+
+/* Focus rings */
+*:focus-visible {
+    outline: 2px solid var(--cf-gold);
+    outline-offset: 2px;
+}
+
+/* Section divider */
+.cf-divider {
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(212, 175, 55, 0.3) 30%,
+        rgba(212, 175, 55, 0.5) 50%,
+        rgba(212, 175, 55, 0.3) 70%,
+        transparent 100%
+    );
+}
+
+/* Accordion gold border on open */
+[data-state="open"] .cf-accordion-icon {
+    transform: rotate(45deg);
+    color: var(--cf-gold);
 }
 
 @layer base {
     [data-debug-wrapper="true"] {
         display: contents !important;
-    }
-
-    [data-debug-wrapper="true"] > * {
-        margin-left: inherit;
-        margin-right: inherit;
-        margin-top: inherit;
-        margin-bottom: inherit;
-        padding-left: inherit;
-        padding-right: inherit;
-        padding-top: inherit;
-        padding-bottom: inherit;
-        column-gap: inherit;
-        row-gap: inherit;
-        gap: inherit;
-        border-left-width: inherit;
-        border-right-width: inherit;
-        border-top-width: inherit;
-        border-bottom-width: inherit;
-        border-left-style: inherit;
-        border-right-style: inherit;
-        border-top-style: inherit;
-        border-bottom-style: inherit;
-        border-left-color: inherit;
-        border-right-color: inherit;
-        border-top-color: inherit;
-        border-bottom-color: inherit;
     }
 }
