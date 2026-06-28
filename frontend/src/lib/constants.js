@@ -128,7 +128,6 @@ export const PLANS = [
       "Everything in Premium",
       "Monthly assessments",
       "Priority booking",
-      "Exclusive Elite lounge",
     ],
     badge: "Best Value",
     highlight: true,
