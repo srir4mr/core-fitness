@@ -6,6 +6,10 @@ export const BIZ = {
   city: "Dindigul",
   founded: "2021",
   founder: "Sathish Muthuchamy",
+  founderHandle: "@sathish_muthuchamy",
+  founderInstagramUrl: "https://www.instagram.com/sathish_muthuchamy/",
+  founderBrand: "TAWAT",
+  founderBrandTagline: "His own activewear label",
   instagramHandle: "@corefitness_dindigul",
   instagramUrl: "https://www.instagram.com/corefitness_dindigul/",
   phone: "+918248999488",
@@ -173,6 +177,23 @@ export const GALLERY = [
     span: "square",
   },
 ];
+
+export const FOUNDER = {
+  name: "Sathish Muthuchamy",
+  role: "Founder · Head Coach",
+  handle: "@sathish_muthuchamy",
+  igUrl: "https://www.instagram.com/sathish_muthuchamy/",
+  brand: "TAWAT",
+  brandTagline: "His own activewear brand — born from a lifelong passion for bodybuilding",
+  bio: [
+    "Sathish built Core Fitness in 2021 with a single belief: Dindigul deserves a gym that respects effort as much as aesthetics. Every plate, every machine and every coach on the floor reflects that standard.",
+    "A competitive bodybuilder and lifelong athlete, his discipline goes beyond the gym — he founded TAWAT, his own activewear label, channeling the same obsession for quality into what members train in.",
+    "When he's not coaching, he's lifting, designing, or quietly making sure your form is on point.",
+  ],
+  photo:
+    "https://customer-assets.emergentagent.com/job_282709a2-22d5-44bd-a76a-0adab3855c8e/artifacts/ngt93md0_DSC03545.JPG",
+};
+
 
 export const TESTIMONIALS = [
   {
