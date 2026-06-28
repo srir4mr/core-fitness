@@ -191,7 +191,7 @@ export const FOUNDER = {
     "When he's not coaching, he's lifting, designing, or quietly making sure your form is on point.",
   ],
   photo:
-    "https://customer-assets.emergentagent.com/job_282709a2-22d5-44bd-a76a-0adab3855c8e/artifacts/ngt93md0_DSC03545.JPG",
+    "https://customer-assets.emergentagent.com/job_dindigul-gym-elite/artifacts/lmbxl1vf_SnapInsta.to_625894672_18403280854135791_2834245472591251100_n.jpg",
 };
 
 
