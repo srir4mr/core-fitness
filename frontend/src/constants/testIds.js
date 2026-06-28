@@ -54,6 +54,13 @@ export const GALLERY = {
   lightboxClose: "gallery-lightbox-close",
 };
 
+export const FOUNDER = {
+  root: "founder-section",
+  title: "founder-title",
+  igLink: "founder-instagram-link",
+  brandTag: "founder-brand-tag",
+};
+
 export const TESTIMONIALS = {
   root: "testimonials-section",
   title: "testimonials-title",
