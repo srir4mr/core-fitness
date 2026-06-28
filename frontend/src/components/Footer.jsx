@@ -3,7 +3,6 @@ import {
   Instagram,
   MessageCircle,
   Phone,
-  Mail,
   MapPin,
   ArrowUpRight,
 } from "lucide-react";
@@ -78,14 +77,6 @@ export default function Footer() {
               >
                 <Phone size={16} />
               </a>
-              <a
-                href={`mailto:${BIZ.email}`}
-                data-testid={TID.email}
-                aria-label="Email"
-                className="w-10 h-10 rounded-full border border-cf-border hover:border-cf-gold hover:text-cf-gold text-white/80 grid place-items-center transition"
-              >
-                <Mail size={16} />
-              </a>
             </div>
           </div>
 
@@ -136,34 +127,33 @@ export default function Footer() {
                   WhatsApp · {BIZ.whatsappDisplay}
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-white/80">
-                <Mail size={16} className="text-cf-gold mt-0.5 shrink-0" />
-                <a href={`mailto:${BIZ.email}`} className="hover:text-cf-gold">
-                  {BIZ.email}
-                </a>
-              </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom row */}
-        <div className="pt-7 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs">
-          <p className="text-cf-mute">
-            Crafted &amp; maintained by{" "}
-            <a
-              href={BIZ.ravexUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid={TID.ravexLink}
-              className="text-cf-gold hover:text-cf-goldHi inline-flex items-center gap-1 transition hover:[text-shadow:0_0_8px_rgba(212,175,55,0.7)]"
-            >
-              Ravex Solutions
-              <ArrowUpRight size={12} />
-            </a>
-          </p>
-          <p className="text-cf-mute">
+        <div className="pt-8 flex flex-col-reverse md:flex-row items-start md:items-center justify-between gap-5">
+          <p className="text-cf-mute text-xs md:text-sm order-2 md:order-1">
             © {BIZ.founded}–2026 {BIZ.name}. All rights reserved.
           </p>
+          <a
+            href={BIZ.ravexUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid={TID.ravexLink}
+            className="group order-1 md:order-2 inline-flex items-center gap-3 px-5 py-3 rounded-full bg-gradient-to-r from-cf-gold/15 via-cf-gold/8 to-transparent border border-cf-gold/50 hover:border-cf-gold transition-all hover:gold-glow"
+          >
+            <span className="text-[10px] md:text-[11px] uppercase tracking-[0.3em] text-cf-mute group-hover:text-white transition-colors">
+              Crafted &amp; maintained by
+            </span>
+            <span className="text-gold-gradient font-display text-lg md:text-2xl uppercase tracking-tight leading-none">
+              Ravex Solutions
+            </span>
+            <ArrowUpRight
+              size={18}
+              className="text-cf-gold group-hover:rotate-12 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+            />
+          </a>
         </div>
       </div>
     </footer>
